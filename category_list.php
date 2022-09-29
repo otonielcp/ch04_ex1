@@ -52,13 +52,15 @@ $statement->closeCursor();
         <h2>Add Category</h2>
 
         <!-- add code for the form here -->
-        <!-- In write the code that creates the category table shown above with all of the category names in the first column and Delete buttons in the second column, similar to how the index. -->
+        <!-- when the add button is click to add the category the will add the the new category to the list and database -->
         <form action="add_category.php" method="post">
             <label>Name:</label>
             <input type="text" name="name">
             <input type="submit" value="Add">
         </form>
         <p><a href="index.php">List Products</a></p>
+
+
 
 
     </main>
