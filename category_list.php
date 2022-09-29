@@ -40,9 +40,14 @@ $statement->closeCursor();
                 <td>
                     <form action="delete_category.php" method="post">
                         <input type="hidden" name="category_id" value="<?php echo $category['categoryID']; ?>">
+                        <!-- connect the button to the database to delete categories from the list -->
+
+
                         <input type="submit" value="Delete">
                     </form>
+
                 </td>
+
                 </tr>
             <?php endforeach; ?>
 
@@ -59,10 +64,6 @@ $statement->closeCursor();
             <input type="submit" value="Add">
         </form>
         <p><a href="index.php">List Products</a></p>
-
-
-
-
     </main>
 
     <footer>

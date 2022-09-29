@@ -98,6 +98,14 @@ $statement3->closeCursor();
                                 <input type="submit" value="Delete">
                             </form>
                         </td>
+                        <!-- These buttons should link to an Edit Product page that works similarly to the Add Product page, but this page should contain the data for the selected product and have an Update Product button below the text boxes. When this button is clicked, the product should be updated. -->
+                        <td>
+                            <form action="edit_product_form.php" method="post">
+                                <input type="hidden" name="product_id" value="<?php echo $product['productID']; ?>">
+                                <input type="hidden" name="category_id" value="<?php echo $product['categoryID']; ?>">
+                                <input type="submit" value="Edit">
+                            </form>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </table>
